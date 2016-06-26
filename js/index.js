@@ -1,9 +1,8 @@
 angular.module('app', ['ui.router'])
-    .config(function ($stateProvider, $urlRouterProvider) {
-        //
-        // For any unmatched url, redirect to /state1
-        $urlRouterProvider.otherwise("/serviceapp");
-        //
+    .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+
+        // $urlRouterProvider.caseInsensitive(true);
+
         // Now set up the states
         $stateProvider
             .state('serviceapp', {
@@ -13,7 +12,15 @@ angular.module('app', ['ui.router'])
             .state('peribiblicumapp', {
                 url: "/peribiblicumapp",
                 templateUrl: "partials/peribiblicumapp.html"
-            })
+            });
+
+
+
+        // For any unmatched url, redirect to /serviceapp
+        $urlRouterProvider.otherwise('/serviceapp');
+
+        // Enable html5mode (I dont't implement it because the .otherwise method breaks).
+        // $locationProvider.html5Mode(true);
     })
     .controller('mainCtrl', ['$scope', '$http', function ($scope, $http) {
         $http({

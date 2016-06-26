@@ -17,6 +17,9 @@ $grey: #777777;
 $font-size: 1.2em;
 $line-height: $font-size * 1.5;
 
+// Padding
+$default-padding: 1em;
+
 @font-face {
   font-family: 'FontAwesome';
   src: url('../fonts/fontawesome-webfont.eot?v=4.6.3');
@@ -104,6 +107,22 @@ header.header {
       font-size: 20px;
       font-variant: small-caps;
     }
+  }
+}
+
+/////////////////////////////////// Main navigation
+nav {
+  clear: both;
+  padding-top: $default-padding*1.5;
+  a {
+    padding: 8px 3px;
+    font-size: 110%;
+    @include transition(all, 0.3s, ease-in-out);
+  }
+  a:hover {
+    background: $drupal;
+    color: #FFF;
+    text-decoration: none;
   }
 }
 

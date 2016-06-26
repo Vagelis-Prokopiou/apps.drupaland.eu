@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>ServiceApp</title>
+    <!--<base href="/">-->
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <script type="text/javascript" src="js/angular.min.js"></script>
     <script type="text/javascript" src="js/angular-ui-router.min.js"></script>
@@ -16,9 +17,11 @@
         <div class="site-slogan">Drupal web development and services</div>
     </div>
 
-    <!-- We'll also add some navigation: -->
-    <a ui-sref="serviceapp">ServiceApp</a>
-    <a ui-sref="peribiblicumapp">PeribiblicumApp</a>
+    <nav>
+        <a ui-sref="serviceapp">ServiceApp</a>
+        <a ui-sref="peribiblicumapp">PeribiblicumApp</a>
+        <a href="http://drupaland.eu/">Drupaland</a>
+    </nav>
 </header>
 
 <main ng-controller="mainCtrl">
