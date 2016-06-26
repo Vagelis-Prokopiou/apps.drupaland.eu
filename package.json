@@ -1,0 +1,23 @@
+{
+  "name": "serviceapp.drupaland.eu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.0",
+    "browser-sync": "^2.13.0",
+    "compass-sass-mixins": "^0.12.7",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "serviceapp.drupaland.eu"
+  },
+  "author": "Vagelis Prokopiou",
+  "license": "MIT"
+}
