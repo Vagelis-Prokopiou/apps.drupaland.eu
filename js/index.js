@@ -17,7 +17,7 @@ angular.module('app', ['ui.router'])
     .controller('mainCtrl', ['$scope', '$http', function ($scope, $http) {
         $http({
             method: "GET",
-            url: "http://www.drupaland.eu/rest/projects"
+            url: "http://www.drupaland.eu/rest/projects?_format=json"
         }).then(function returnSuccess(response) {
             $scope.projects = response.data;
         }, function returnError(response) {
